@@ -1,0 +1,5 @@
+This folder contains:
+
+1. Data-and-Replication: slides to motivate data-sharing and replication, with results from Many Labs, Replication Project: Psychology, and The Journal of Money, Credit, and Banking Project.
+
+2. coding_suggestions.md: A list of suggestions for general/Stata coding. Try and edit the .md file and submit a pull request! Or, if you're not comfortable with Git yet, [edit the similar google doc](https://docs.google.com/document/d/1f0rO_k2ZFt1_vxRpX2C1NDczHEc7X95L0zkfN5DddCM/edit?usp=sharing).
