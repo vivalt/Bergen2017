@@ -36,3 +36,16 @@ sum price
 *Need to use full path to tex file because the stata working directory doesn't pass through the shell command 
 scalar meanprice=r(mean)
 latexnc meanprice "StataScalarList.tex"
+
+// You can also do custom things with matrices, e.g.:
+
+clear matrix
+mat T=J(1,4,.)
+
+ttest testvar, by(treatment)
+mat T[1,1]=r(mu_1)
+mat T[1,2]=r(mu_2)
+mat T[1,3]=r(mu_1)-r(mu_2)
+mat T[1,4]=r(p)
+
+mat rownames T = testvar
